@@ -14,7 +14,7 @@ IF(USE_RBDL)
     ADD_TEST(test_rbdl_bt_PASS test_rbdl_bt) 
   endif(Bullet_FOUND)
   
-  IF(False)
+  IF(True)
     add_executable(test_rbdl_tds test_rbdl.cpp)
     set_target_properties(test_rbdl_tds PROPERTIES FOLDER autodiff)
     target_link_libraries(test_rbdl_tds PRIVATE tinyxml2 Eigen3::Eigen ${PYTHON_LIBRARIES})
